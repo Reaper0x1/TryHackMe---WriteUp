@@ -9,7 +9,7 @@
 No answer needed
 ```
 
-### Task 2 - Penetration Testing Ethics
+### Task 2 - Penetration Testing Ethics   
 
 > You are given permission to perform a security audit on an organisation; what type of hacker would you be?
 ```
@@ -235,56 +235,56 @@ cgiirc
 /s3cr3t-area
 ```
 
-## Task 5 - Manual Discovery - HTTP Headers
+### Task 5 - Manual Discovery - HTTP Headers
 
 > What is the flag value from the X-FLAG header?
 ```
 THM{HEADER_FLAG}
 ```
 
-## Task 6 - Manual Discovery - Framework Stack
+### Task 6 - Manual Discovery - Framework Stack
 
 > What is the flag from the framework's administration portal?
 ```
 THM{CHANGE_DEFAULT_CREDENTIALS}
 ```
 
-## Task 7 - OSINT - Google Hacking / Dorking
+### Task 7 - OSINT - Google Hacking / Dorking
 
 > What Google dork operator can be used to only show results from a particular site?
 ```
 site:
 ```
 
-## Task 8 - OSINT - Wappalyzer
+### Task 8 - OSINT - Wappalyzer
 
 > What online tool can be used to identify what technologies a website is running?
 ```
 Wappalyzer
 ```
 
-## Task 9 - OSINT - Wayback Machine
+### Task 9 - OSINT - Wayback Machine
 
 > What is the website address for the Wayback Machine?
 ```
 https://archive.org/web/
 ```
 
-## Task 10 - OSINT - Github
+### Task 10 - OSINT - Github
 
 > What is Git?
 ```
 version control system
 ```
 
-## Task 11 - OSINT - S3 Buckets
+### Task 11 - OSINT - S3 Buckets
 
 > What URL format do Amazon S3 buckets end in?
 ```
 .s3.amazonaws.com
 ```
 
-## Task 12 - Automated Discovery
+### Task 12 - Automated Discovery
 
 > What is the name of the directory beginning "/mo...." that was discovered?
 ```
@@ -298,7 +298,7 @@ version control system
 
 ## Subdomain Enumeration
 
-## Task 1 - Brief
+### Task 1 - Brief
 
 > What is a subdomain enumeration method beginning with B?
 ```
@@ -316,35 +316,35 @@ Virtual Host
 ```
 > Click "Start Machine" button and paste the Machine IP Address on a new tab address bar (if connected with OpenVPN) or inside the browser of your Attack Machine.
 
-## Task 2 - OSINT - SSL/TLS Certificates
+### Task 2 - OSINT - SSL/TLS Certificates
 
 > What domain was logged on crt.sh at 2020-12-26?
 ```
 store.tryhackme.com
 ```
 
-## Task 3 - OSINT - Search Engine
+### Task 3 - OSINT - Search Engine
 
 > What is the TryHackMe subdomain beginning with B discovered using the above Google search?
 ```
 blog.tryhackme.com
 ```
 
-## Task 4 - DNS Bruteforce
+### Task 4 - DNS Bruteforce
 
 > What is the first subdomain found with the dnsrecon tool?
 ```
 api.acmeitsupport.thm
 ```
 
-## Task 5 - OSINT - Sublist3r
+### Task 5 - OSINT - Sublist3r
 
 > What is the first subdomain discovered by sublist3r?
 ```
 web55.acmeitsupport.thm
 ```
 
-## Task 5 - Virtual Host
+### Task 5 - Virtual Host
 
 > What is the first subdomain discovered?
 ```
@@ -355,3 +355,62 @@ delta
 ```
 yellow
 ```
+
+## Authentication Bypass
+
+### Task 1 - Brief
+
+> I have started the machine.
+```
+No answer needed
+```
+> Click "Start Machine" button.
+
+### Task 2 - Username Enumeration
+
+> What is the username starting with si*** ?
+```
+simon
+```
+> What is the username starting with st*** ?
+```
+steve
+```
+> What is the username starting with ro**** ?
+```
+robert
+```
+
+### Task 3 - Brute Force
+
+> What is the valid username and password (format: username/password)?
+```
+steve/thunder
+```
+
+### Task 4 - Logic Flaw
+
+> What is the flag from Robert's support ticket?
+```
+THM{AUTH_BYPASS_COMPLETE}
+```
+
+### Task 5 - Cookie Tampering
+
+> What is the flag from changing the plain text cookie values?
+```
+THM{COOKIE_TAMPERING}
+```
+> What is the value of the md5 hash 3b2a1053e3270077456a79192070aa78 ?
+```
+463729
+```
+> What is the base64 decoded value of VEhNe0JBU0U2NF9FTkNPRElOR30= ?
+```
+THM{BASE64_ENCODING}
+```
+> Encode the following value using base64 {"id":1,"admin":true}
+```
+eyJpZCI6MSwiYWRtaW4iOnRydWV9
+```
+## IDOR
